@@ -20,3 +20,11 @@
                 return l1.get(0)- l2.get(0);
        } 
     });
+
+    // Sorting Tricks 2D array
+Arrays.sort(arr , Comparator);
+Arrays.sort(arr, (int[] a, int[] b) -> a[0] == b[0] ? a[1] - b[1] : a[0] - b[0]); 
+
+    // Processing Queue
+PriorityQueue<E> q =  new PriorityQueue<>(E Comparator)
+PriorityQueue<Task> processingQ = new PriorityQueue<>((Task a , Task b) -> (a.exec == b.exec) ? a.index - b.index : a.exec - b.exec);
